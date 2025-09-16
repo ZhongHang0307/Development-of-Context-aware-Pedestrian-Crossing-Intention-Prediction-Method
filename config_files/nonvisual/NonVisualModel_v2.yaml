@@ -1,6 +1,6 @@
 model_opts:
   model: NonVisualModel
-  obs_input_type: ['behavior', 'bbox', 'vehicle_act']
+  obs_input_type: ['bbox', 'vehicle_act', 'scene']
   apply_class_weights: True
   normalize_boxes: False
   generator: True
