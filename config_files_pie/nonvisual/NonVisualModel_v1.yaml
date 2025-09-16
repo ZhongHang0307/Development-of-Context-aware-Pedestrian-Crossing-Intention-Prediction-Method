@@ -1,7 +1,7 @@
 model_opts:
   model: NonVisualModel
   dataset: pie
-  obs_input_type: ['bbox', 'vehicle_act']
+  obs_input_type: ['behavior', 'bbox', 'vehicle_act']
   apply_class_weights: True
   normalize_boxes: False
   generator: True
