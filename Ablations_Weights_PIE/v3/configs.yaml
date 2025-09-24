@@ -1,0 +1,41 @@
+data_opts:
+  data_opts: null
+  data_split_type: default
+  fstride: 1
+  min_track_size: 76
+  sample_type: all
+  seq_type: nonvisual_v1
+  subset: default
+model_opts:
+  apply_class_weights: true
+  balance_data: false
+  dataset: pie
+  enlarge_ratio: 1.5
+  fusion_method: sum
+  fusion_point: early
+  generator: true
+  model: NonVisualModel
+  normalize_boxes: false
+  obs_input_type: &id001
+  - bbox
+  - vehicle_act
+  obs_length: 16
+  overlap: 0.6
+  time_to_event:
+  - 30
+  - 60
+net_opts:
+  backbone: vgg16
+  cell_type: gru
+  dropout: 0.1
+  global_pooling: avg
+  input_type_list: *id001
+  num_heads: 4
+  num_hidden_units: 128
+  num_layers: 2
+  regularizer_val: 0.0001
+train_opts:
+  batch_size: 2
+  epochs: 30
+  learning_scheduler: null
+  lr: 5.0e-06
