@@ -7,7 +7,7 @@ All dependencies are listed in requirements.txt. To set up the environment, run:
 ```bash
 pip install -r requirements.txt
 ```
-###Training
+Training
 
 On JAAD dataset
 ```bash
